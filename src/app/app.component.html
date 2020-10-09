@@ -2,9 +2,12 @@
 <br>
 <app-card
 [iconClass]="'fa fa-info-circle'"
-title="Title"
-subTitle="SubTitle"
+title="Accordion"
+subTitle="Component"
 >
-  <p body>Body Content</p>
+  <p body><app-accordion
+  [accordionItems]="accordionItems"
+  >
+  </app-accordion></p>
   <p footer>Footer Content</p>
 </app-card>

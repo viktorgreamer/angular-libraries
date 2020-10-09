@@ -1,0 +1,36 @@
+@import "../../../styles";
+.accordion-container {
+  display: grid;
+  grid-gap: 5px;
+  padding: 0 5px;
+  @include box-shadow();
+  .item {
+    border-bottom: 1px solid rgb(221,221,221);
+
+    .header {
+      padding: 5px 0;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      cursor: pointer;
+
+      i {
+        color: $info;
+        &.is-expanded {
+          transform: rotate(180deg);
+          transition: all 0.6ms;
+        }
+      }
+
+    }
+    .content {
+      &.is-expanded {
+        display: none;
+        transition: 0.6ms;
+      }
+    }
+  }
+}
+
+
+

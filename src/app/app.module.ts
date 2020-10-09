@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
+import { StarRatingComponent } from './components/star-rating/star-rating.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolBarComponent,
     CardComponent,
-    AccordionComponent
+    AccordionComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,
@@ -21,4 +23,4 @@ import { AccordionComponent } from './components/accordion/accordion.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

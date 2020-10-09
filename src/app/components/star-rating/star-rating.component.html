@@ -1,0 +1,5 @@
+<div class="star-rating-containers">
+  <i class="fa fa-star" *ngFor="let stars of getFullStarts()"></i>
+  <i class="fa fa-star-half" *ngIf="isHalf()"></i>
+  <i class="fa fa-star-o" *ngFor="let stars of getEmptyStarts()"></i>
+</div>

@@ -12,4 +12,5 @@ export class AppComponent {
     {title: 'title1', content: 'content1', isExpanded: true},
     {title: 'title2', content: 'content2', isExpanded: false},
   ];
+  progressValue = 50;
 }

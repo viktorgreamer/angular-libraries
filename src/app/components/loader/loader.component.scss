@@ -1,0 +1,40 @@
+.loader-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 999;
+  backdrop-filter: blur(2px);
+
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loader {
+      position: absolute;
+      top: 35%;
+
+      .circular {
+        $border-props: 10px solid;
+        border: $border-props gray;
+        border-radius: 50%;
+        border-top: $border-props cornflowerblue;
+        width: 100px;
+        height: 100px;
+        animation:  spin 1s linear infinite;
+
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}

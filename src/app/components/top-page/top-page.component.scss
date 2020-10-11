@@ -1,0 +1,15 @@
+@import "../../../styles";
+
+button.go-to-top {
+  position: fixed;
+  border: none;
+  right: 1rem;
+  bottom: 1rem;
+  height: 50px;
+  width: 50px;
+  color: white;
+  background-color: #ff3547;
+  border-radius: 50%;
+
+  @include box-shadow();
+}

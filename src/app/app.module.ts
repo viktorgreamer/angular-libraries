@@ -7,6 +7,7 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { StarRatingComponent } from './components/star-rating/star-rating.component';
+import { TopPageComponent } from './components/top-page/top-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { StarRatingComponent } from './components/star-rating/star-rating.compon
     ToolBarComponent,
     CardComponent,
     AccordionComponent,
-    StarRatingComponent
+    StarRatingComponent,
+    TopPageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<div class="modal-overlay" *ngIf="open">
+  <div class="modal-container">
+    <div class="header">
+      <div>
+        <ng-content select="[header]"></ng-content>
+      </div>
+      <span (click)="closeModal()"> &times; </span>
+    </div>
+    <div class="body">
+      <ng-content select="[body]"></ng-content>
+    </div>
+    <div class="footer">
+      <ng-content select="[footer]"></ng-content>
+    </div>
+  </div>
+</div>

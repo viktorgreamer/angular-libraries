@@ -18,6 +18,7 @@ export class DocumentationComponent implements OnInit {
     {title: 'title2', content: 'content2', isExpanded: false},
   ];
   progressValue = 50;
+  openModal = false;
 
   ngOnInit(): void {
   }

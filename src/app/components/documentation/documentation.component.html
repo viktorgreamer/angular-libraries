@@ -1,5 +1,29 @@
 <app-card
   [iconClass]="'fa fa-info-circle'"
+  title="Modal"
+  subTitle="Component"
+>
+  <app-modal body [open]= "openModal" (close)="openModal = false">
+    <div header>
+      Modal Header
+    </div>
+    <div body>
+      There are three phases of AOT compilation.
+
+      Phase 1 is code analysis. In this phase, the TypeScript compiler and AOT collector create a representation of the source. The collector does not attempt to interpret the metadata it collects. It represents the metadata as best it can and records errors when it detects a metadata syntax violation.
+
+      Phase 2 is code generation. In this phase, the compiler's StaticReflector interprets the metadata collected in phase 1, performs additional validation of the metadata, and throws an error if it detects a metadata restriction violation.
+
+      Phase 3 is template type checking. In this optional phase, the Angular template compiler uses the TypeScript compiler to validate the binding expressions in templates. You can enable this phase explicitly by setting the fullTemplateTypeCheck configuration option; see Angular compiler options.
+    </div>
+    <div footer>
+      <button (click)="openModal = false"> Close </button>
+    </div>
+  </app-modal>
+  <p footer><button (click)="openModal = !openModal">Open Modal</button></p>
+</app-card>
+<app-card
+  [iconClass]="'fa fa-info-circle'"
   title="CreditCard"
   subTitle="Component"
 >

@@ -15,6 +15,8 @@ import {ToolBarComponent} from './tool-bar/tool-bar.component';
     AppRoutingModule,
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

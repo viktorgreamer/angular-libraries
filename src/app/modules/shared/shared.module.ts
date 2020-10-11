@@ -11,6 +11,8 @@ import {FormsModule} from '@angular/forms';
 import {LoaderComponent} from '../../components/loader/loader.component';
 import {ModalComponent} from '../../components/modal/modal.component';
 import {QuoteComponent} from '../../components/quote/quote.component';
+import {ToggleComponent} from '../../components/toggle/toggle.component';
+
 
 
 @NgModule({
@@ -25,6 +27,7 @@ import {QuoteComponent} from '../../components/quote/quote.component';
     LoaderComponent,
     ModalComponent,
     QuoteComponent,
+    ToggleComponent,
   ],
   imports: [
     CommonModule,
@@ -41,6 +44,7 @@ import {QuoteComponent} from '../../components/quote/quote.component';
     LoaderComponent,
     ModalComponent,
     QuoteComponent,
+    ToggleComponent,
   ],
 })
 export class SharedModule { }

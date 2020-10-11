@@ -8,6 +8,7 @@ import {StarRatingComponent} from '../../components/star-rating/star-rating.comp
 import {AccordionComponent} from '../../components/accordion/accordion.component';
 import {CreditCardComponent} from '../components/credit-card/credit-card.component';
 import {FormsModule} from '@angular/forms';
+import {LoaderComponent} from '../../components/loader/loader.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import {FormsModule} from '@angular/forms';
     StarRatingComponent,
     AccordionComponent,
     CreditCardComponent,
+    LoaderComponent,
   ],
   imports: [
     CommonModule,
@@ -32,6 +34,7 @@ import {FormsModule} from '@angular/forms';
     StarRatingComponent,
     AccordionComponent,
     CreditCardComponent,
+    LoaderComponent
   ],
 })
 export class SharedModule { }

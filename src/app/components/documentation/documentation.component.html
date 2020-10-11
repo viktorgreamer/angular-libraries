@@ -20,6 +20,21 @@
   </p>
   <p footer>Footer Content</p>
 </app-card>
+<app-card
+  [iconClass]="'fa fa-info-circle'"
+  title="Loader"
+  [subTitle]="loaderType"
+>
+  <div body>
+    <div>
+      <app-loader [type]="loaderType" [loaded]="showLoader"></app-loader>
+    </div>
+  </div>
+  <p footer>
+    <button (click)="initLoader()">Loader</button>
+    <button (click)="switchLoaderType()">Switch</button>
+  </p>
+</app-card>
 
 <app-card
   [iconClass]="'fa fa-info-circle'"

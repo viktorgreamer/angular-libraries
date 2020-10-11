@@ -1,8 +1,12 @@
 <div class="loader-overlay" *ngIf="loaded">
   <div class="loader-container">
     <div class="loader">
-        <div class="circular">
+        <div class="circular" *ngIf="isCircular()">
 
+        </div>
+
+      <div class="loading" *ngIf="!isCircular()">
+          Loading <span>{{ dots }}</span>
         </div>
     </div>
   </div>

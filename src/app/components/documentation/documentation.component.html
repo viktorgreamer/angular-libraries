@@ -1,0 +1,23 @@
+<app-card
+  [iconClass]="'fa fa-info-circle'"
+  title="Accordion"
+  subTitle="Component"
+>
+  <p body>
+    <app-accordion
+      [accordionItems]="accordionItems"
+    >
+    </app-accordion>
+  </p>
+  <p footer>Footer Content</p>
+</app-card>
+
+<app-card
+  [iconClass]="'fa fa-info-circle'"
+  title="Star-rating"
+  subTitle="Component"
+>
+  <app-star-rating body [value]="4.5"></app-star-rating>
+  <p footer>Footer Content</p>
+</app-card>
+<app-top-page></app-top-page>

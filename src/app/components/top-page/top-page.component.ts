@@ -7,7 +7,7 @@ import {ViewportScroller} from '@angular/common';
   styleUrls: ['./top-page.component.scss']
 })
 export class TopPageComponent implements OnInit {
-  private showButton: boolean;
+  public showButton: boolean;
 
   @HostListener('window:scroll') onWindowScroll(): void {
     if (this.viewportScroller.getScrollPosition()[1] > window.innerHeight) {

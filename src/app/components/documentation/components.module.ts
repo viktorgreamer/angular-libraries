@@ -14,12 +14,12 @@ import {COMPONENT_DOCUMENTATION_ROUTES} from './documentation-routing.module';
     AccordionComponent,
     StarRatingComponent,
     TopPageComponent,
-    DocumentationComponent
+    DocumentationComponent,
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(COMPONENT_DOCUMENTATION_ROUTES)
   ],
-  exports: [DocumentationComponent],
+  exports: [DocumentationComponent, CardComponent],
 })
 export class ComponentsModule { }

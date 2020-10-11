@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ToolBarComponent} from './tool-bar/tool-bar.component';
+import { DebounceDirective } from './directives/debounce.directive';
 
 @NgModule({
   declarations: [
     ToolBarComponent,
     AppComponent,
+    DebounceDirective,
   ],
   imports: [
     BrowserModule,
@@ -16,6 +18,7 @@ import {ToolBarComponent} from './tool-bar/tool-bar.component';
   ],
   providers: [],
   exports: [
+    DebounceDirective
   ],
   bootstrap: [AppComponent]
 })

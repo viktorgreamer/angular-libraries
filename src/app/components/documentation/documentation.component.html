@@ -1,3 +1,14 @@
+
+<app-card
+  [iconClass]="'fa fa-info-circle'"
+  title="Debuonce"
+  subTitle="Directive"
+>
+  <p body>
+    <button appDebounceClick (debounceClick)="log()"> debounceClick </button>
+  </p>
+</app-card>
+
 <app-card
   [iconClass]="'fa fa-info-circle'"
   title="Modal"

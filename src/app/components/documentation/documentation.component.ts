@@ -35,4 +35,8 @@ export class DocumentationComponent implements OnInit {
     }
     this.loaderType = LoaderType.Loading;
   }
+
+  log(): void {
+    console.log('LOG');
+  }
 }

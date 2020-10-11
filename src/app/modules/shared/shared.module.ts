@@ -6,6 +6,8 @@ import {TruncateStringPipe} from '../../components/documentation/pipe-documentat
 import {CreditCardPipePipe} from '../../pipes/credit-card-pipe.pipe';
 import {StarRatingComponent} from '../../components/star-rating/star-rating.component';
 import {AccordionComponent} from '../../components/accordion/accordion.component';
+import {CreditCardComponent} from '../components/credit-card/credit-card.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -15,10 +17,12 @@ import {AccordionComponent} from '../../components/accordion/accordion.component
     TruncateStringPipe,
     CreditCardPipePipe,
     StarRatingComponent,
-    AccordionComponent
+    AccordionComponent,
+    CreditCardComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     CardComponent,
@@ -27,6 +31,7 @@ import {AccordionComponent} from '../../components/accordion/accordion.component
     CreditCardPipePipe,
     StarRatingComponent,
     AccordionComponent,
+    CreditCardComponent,
   ],
 })
 export class SharedModule { }

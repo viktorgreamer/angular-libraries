@@ -1,0 +1,13 @@
+<div class="credit-card-input-container">
+  <div class="input-container">
+    <i class="fa fa-credit-card" aria-hidden="true"></i>
+    <input
+      type="text"
+      required
+      maxlength="16"
+      [readonly]="isReadOnly"
+      [(ngModel)]="creditCardNumber"
+    />
+  </div>
+  {{ creditCardNumber | creditCard }}
+</div>

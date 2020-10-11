@@ -17,6 +17,7 @@ import {LoaderComponent} from './components/loader/loader.component';
     AppRoutingModule,
   ],
   providers: [],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

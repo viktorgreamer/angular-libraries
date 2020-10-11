@@ -10,6 +10,7 @@ import {CreditCardComponent} from '../components/credit-card/credit-card.compone
 import {FormsModule} from '@angular/forms';
 import {LoaderComponent} from '../../components/loader/loader.component';
 import {ModalComponent} from '../../components/modal/modal.component';
+import {QuoteComponent} from '../../components/quote/quote.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import {ModalComponent} from '../../components/modal/modal.component';
     CreditCardComponent,
     LoaderComponent,
     ModalComponent,
+    QuoteComponent,
   ],
   imports: [
     CommonModule,
@@ -38,6 +40,7 @@ import {ModalComponent} from '../../components/modal/modal.component';
     CreditCardComponent,
     LoaderComponent,
     ModalComponent,
+    QuoteComponent,
   ],
 })
 export class SharedModule { }

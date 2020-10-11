@@ -1,0 +1,25 @@
+.quote-container {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  padding: 1rem 1rem 1rem 2.5rem;
+
+  border-left: 3px solid gray;
+
+  &.primary {
+    border-left: 3px solid #4285f4;
+  }
+  &.danger {
+    border-left: 3px solid #ff3547;
+  }
+
+  .quote {
+    align-self: flex-end;
+    justify-self: left;
+  }
+  .author {
+   justify-self: right;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

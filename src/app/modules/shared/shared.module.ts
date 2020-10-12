@@ -12,6 +12,7 @@ import {LoaderComponent} from '../../components/loader/loader.component';
 import {ModalComponent} from '../../components/modal/modal.component';
 import {QuoteComponent} from '../../components/quote/quote.component';
 import {ToggleComponent} from '../../components/toggle/toggle.component';
+import {DebounceSearchComponent} from '../../components/debounce-search/debounce-search.component';
 
 
 
@@ -28,6 +29,7 @@ import {ToggleComponent} from '../../components/toggle/toggle.component';
     ModalComponent,
     QuoteComponent,
     ToggleComponent,
+    DebounceSearchComponent,
   ],
   imports: [
     CommonModule,
@@ -45,6 +47,7 @@ import {ToggleComponent} from '../../components/toggle/toggle.component';
     ModalComponent,
     QuoteComponent,
     ToggleComponent,
+    DebounceSearchComponent
   ],
 })
 export class SharedModule { }

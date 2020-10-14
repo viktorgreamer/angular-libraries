@@ -19,6 +19,9 @@ export class DocumentationComponent implements OnInit {
   ];
   progressValue = 50;
   openModal = false;
+  public options = [
+    'USA', 'United Arab Emirates', 'Russia', 'French', 'Portugal'
+  ];
 
   ngOnInit(): void {
   }

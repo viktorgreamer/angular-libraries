@@ -13,6 +13,8 @@ import {ModalComponent} from '../../components/modal/modal.component';
 import {QuoteComponent} from '../../components/quote/quote.component';
 import {ToggleComponent} from '../../components/toggle/toggle.component';
 import {DebounceSearchComponent} from '../../components/debounce-search/debounce-search.component';
+import {SearchListComponent} from '../../components/search-list/search-list.component';
+import {FilterTermPipe} from '../../components/documentation/pipe-documentation/filter-term.pipe';
 
 
 
@@ -22,6 +24,7 @@ import {DebounceSearchComponent} from '../../components/debounce-search/debounce
     TopPageComponent,
     TruncateStringPipe,
     CreditCardPipePipe,
+    FilterTermPipe,
     StarRatingComponent,
     AccordionComponent,
     CreditCardComponent,
@@ -30,6 +33,7 @@ import {DebounceSearchComponent} from '../../components/debounce-search/debounce
     QuoteComponent,
     ToggleComponent,
     DebounceSearchComponent,
+    SearchListComponent,
   ],
   imports: [
     CommonModule,
@@ -47,7 +51,9 @@ import {DebounceSearchComponent} from '../../components/debounce-search/debounce
     ModalComponent,
     QuoteComponent,
     ToggleComponent,
-    DebounceSearchComponent
+    DebounceSearchComponent,
+    SearchListComponent,
+    FilterTermPipe,
   ],
 })
 export class SharedModule { }

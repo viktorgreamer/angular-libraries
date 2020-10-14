@@ -1,0 +1,19 @@
+@import "../../../styles.scss";
+
+ul {
+  position: relative;
+  list-style: none;
+  .options-container {
+    position: absolute;
+    @include box-shadow();
+    width: inherit;
+    li {
+      padding: 3px;
+      transition: all 0.3s;
+      cursor: pointer;
+      &:hover {
+        background-color: gray;
+      }
+    }
+  }
+}

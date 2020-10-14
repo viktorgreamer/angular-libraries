@@ -1,0 +1,7 @@
+<div class="counter-container">
+  <div class="counter">
+    <button class="minus" (click)="down()"><i class="fa fa-minus"></i></button>
+    <input type="number" [max]="max" [min]="min" [(ngModel)]="counter">
+    <button class="plus" (click)="up()"><i class="fa fa-plus"></i></button>
+  </div>
+</div>

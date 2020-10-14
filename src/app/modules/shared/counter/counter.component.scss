@@ -1,0 +1,39 @@
+@import '../../../../styles.scss';
+
+.counter-container {
+  max-width: 200px;
+  .counter {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: gray 2px solid;
+
+    input {
+      height: 30px;
+      border: none;
+    }
+
+    .plus {
+      background-color: green;
+      height: 100%;
+     text-align: center;
+      vertical-align: center;
+    }
+
+    .minus {
+      background-color: red;
+      height: 100%;
+      text-align: center;
+      vertical-align: center;
+    }
+    span.center {
+      margin: auto;
+    }
+    button {
+      border: none;
+    }
+  }
+
+}

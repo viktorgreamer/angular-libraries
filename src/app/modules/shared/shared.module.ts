@@ -15,6 +15,7 @@ import {ToggleComponent} from '../../components/toggle/toggle.component';
 import {DebounceSearchComponent} from '../../components/debounce-search/debounce-search.component';
 import {SearchListComponent} from '../../components/search-list/search-list.component';
 import {FilterTermPipe} from '../../components/documentation/pipe-documentation/filter-term.pipe';
+import { CounterComponent } from './counter/counter.component';
 
 
 
@@ -34,6 +35,7 @@ import {FilterTermPipe} from '../../components/documentation/pipe-documentation/
     ToggleComponent,
     DebounceSearchComponent,
     SearchListComponent,
+    CounterComponent,
   ],
   imports: [
     CommonModule,
@@ -54,6 +56,7 @@ import {FilterTermPipe} from '../../components/documentation/pipe-documentation/
     DebounceSearchComponent,
     SearchListComponent,
     FilterTermPipe,
+    CounterComponent,
   ],
 })
 export class SharedModule { }

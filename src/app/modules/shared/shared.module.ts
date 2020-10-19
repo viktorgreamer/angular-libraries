@@ -7,7 +7,7 @@ import {CreditCardPipePipe} from '../../pipes/credit-card-pipe.pipe';
 import {StarRatingComponent} from '../../components/star-rating/star-rating.component';
 import {AccordionComponent} from '../../components/accordion/accordion.component';
 import {CreditCardComponent} from '../components/credit-card/credit-card.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {LoaderComponent} from '../../components/loader/loader.component';
 import {ModalComponent} from '../../components/modal/modal.component';
 import {QuoteComponent} from '../../components/quote/quote.component';
@@ -16,8 +16,8 @@ import {DebounceSearchComponent} from '../../components/debounce-search/debounce
 import {SearchListComponent} from '../../components/search-list/search-list.component';
 import {FilterTermPipe} from '../../components/documentation/pipe-documentation/filter-term.pipe';
 import { CounterComponent } from './counter/counter.component';
-
-
+import {RippleDirective} from '../directives/ripple.directive';
+import { EmailFormComponentComponent } from './email-form-component/email-form-component.component';
 
 @NgModule({
   declarations: [
@@ -36,10 +36,13 @@ import { CounterComponent } from './counter/counter.component';
     DebounceSearchComponent,
     SearchListComponent,
     CounterComponent,
+    RippleDirective,
+    EmailFormComponentComponent,
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     CardComponent,
@@ -57,6 +60,8 @@ import { CounterComponent } from './counter/counter.component';
     SearchListComponent,
     FilterTermPipe,
     CounterComponent,
+    RippleDirective,
+    EmailFormComponentComponent,
   ],
 })
 export class SharedModule { }

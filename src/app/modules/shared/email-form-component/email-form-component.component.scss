@@ -1,0 +1,77 @@
+@import "src/styles.scss";
+
+.email-form-container {
+  max-width: 400px;
+  display: grid;
+  gap: 1rem;
+
+  .email-container {
+    .form-container {
+      padding: 1rem;
+
+      h2 {
+        color: $primary;
+        margin-top: 0;
+      }
+
+      .email-form {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          'name email'
+        'message message'
+          '. submit ';
+
+        input[type=text],
+        input[type=email],
+        textarea {
+          padding-left: 33px;
+        }
+
+        .error {
+          font-size: 0.75rem;
+          color: $danger;
+        }
+
+        .name {
+          grid-area: name;
+        }
+
+        .email {
+          grid-area: email;
+        }
+
+        .message {
+          grid-area: message;
+        }
+
+        .submit {
+          grid-area: submit;
+        }
+
+        .email, .name {
+          position: relative;
+
+          i {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        input, textarea {
+          &:focus {
+            color: $primary;
+            transition: all 0.3s;
+
+            & + i {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -37,8 +37,7 @@ import { EmailFormComponentComponent } from './email-form-component/email-form-c
     SearchListComponent,
     CounterComponent,
     RippleDirective,
-    EmailFormComponentComponent,
-  ],
+    EmailFormComponentComponent],
   imports: [
     CommonModule,
     FormsModule,

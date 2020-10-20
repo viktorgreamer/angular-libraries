@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivesDocumentationComponent implements OnInit {
 
+  isCanBeDeactivated = true;
   constructor() { }
 
   ngOnInit(): void {

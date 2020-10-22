@@ -18,6 +18,7 @@ import {FilterTermPipe} from '../../components/documentation/pipe-documentation/
 import { CounterComponent } from './counter/counter.component';
 import {RippleDirective} from '../directives/ripple.directive';
 import { EmailFormComponentComponent } from './email-form-component/email-form-component.component';
+import { SnackBarComponentComponent } from './snack-bar-component/snack-bar-component.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { EmailFormComponentComponent } from './email-form-component/email-form-c
     CounterComponent,
     RippleDirective,
     EmailFormComponentComponent,
+    SnackBarComponentComponent,
   ],
   imports: [
     CommonModule,
@@ -62,6 +64,7 @@ import { EmailFormComponentComponent } from './email-form-component/email-form-c
     CounterComponent,
     RippleDirective,
     EmailFormComponentComponent,
+    SnackBarComponentComponent,
   ],
 })
 export class SharedModule { }

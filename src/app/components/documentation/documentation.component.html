@@ -9,6 +9,20 @@
 </app-card>
 <app-card
   [iconClass]="'fa fa-info-circle'"
+  title="SnackBar"
+  subTitle="Component"
+>
+  <div body>
+   <app-snack-bar-component
+     #snackBar
+     message="I am snackbar"
+   ></app-snack-bar-component>
+    <button (click)="snackBar.color = 'success'; snackBar.show()">Show Snackbar</button>
+    <button (click)="snackBar.color = 'danger'; snackBar.show()">Show Danger Snackbar</button>
+  </div>
+</app-card>
+<app-card
+  [iconClass]="'fa fa-info-circle'"
   title="EmailForm"
   subTitle="Component"
 >

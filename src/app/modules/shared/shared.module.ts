@@ -19,6 +19,7 @@ import { CounterComponent } from './counter/counter.component';
 import {RippleDirective} from '../directives/ripple.directive';
 import { EmailFormComponentComponent } from './email-form-component/email-form-component.component';
 import { SnackBarComponentComponent } from './snack-bar-component/snack-bar-component.component';
+import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { SnackBarComponentComponent } from './snack-bar-component/snack-bar-comp
     RippleDirective,
     EmailFormComponentComponent,
     SnackBarComponentComponent,
+    SimplePopupComponent,
   ],
   imports: [
     CommonModule,
@@ -65,6 +67,7 @@ import { SnackBarComponentComponent } from './snack-bar-component/snack-bar-comp
     RippleDirective,
     EmailFormComponentComponent,
     SnackBarComponentComponent,
+    SimplePopupComponent,
   ],
 })
 export class SharedModule { }

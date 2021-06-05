@@ -1,11 +1,13 @@
 import {Component, OnInit} from '@angular/core';
 import {AccordionItem} from '../accordion/AccordionItem';
 import {LoaderType} from '../../enum/loader-type.enum';
+import {fadeInOutAnimation} from '../../modules/shared/animations/fade-in-out/fade-in-out.animation';
 
 @Component({
   selector: 'app-documentation',
   templateUrl: './documentation.component.html',
-  styleUrls: ['./documentation.component.scss']
+  styleUrls: ['./documentation.component.scss'],
+  animations: [fadeInOutAnimation],
 })
 export class DocumentationComponent implements OnInit {
 

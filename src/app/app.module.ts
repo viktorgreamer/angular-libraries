@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {ToolBarComponent} from './tool-bar/tool-bar.component';
 import { DebounceDirective } from './directives/debounce.directive';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { DebounceDirective } from './directives/debounce.directive';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
     exports: [

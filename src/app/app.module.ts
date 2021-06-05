@@ -17,7 +17,9 @@ import { DebounceDirective } from './directives/debounce.directive';
     AppRoutingModule,
   ],
   providers: [],
-  exports: [],
+    exports: [
+        DebounceDirective
+    ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

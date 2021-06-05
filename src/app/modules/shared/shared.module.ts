@@ -18,6 +18,7 @@ import {FilterTermPipe} from '../../components/documentation/pipe-documentation/
 import { CounterComponent } from './counter/counter.component';
 import {RippleDirective} from '../directives/ripple.directive';
 import { EmailFormComponentComponent } from './email-form-component/email-form-component.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -38,30 +39,32 @@ import { EmailFormComponentComponent } from './email-form-component/email-form-c
     CounterComponent,
     RippleDirective,
     EmailFormComponentComponent,
+    PaginationComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
   ],
-  exports: [
-    CardComponent,
-    TopPageComponent,
-    TruncateStringPipe,
-    CreditCardPipePipe,
-    StarRatingComponent,
-    AccordionComponent,
-    CreditCardComponent,
-    LoaderComponent,
-    ModalComponent,
-    QuoteComponent,
-    ToggleComponent,
-    DebounceSearchComponent,
-    SearchListComponent,
-    FilterTermPipe,
-    CounterComponent,
-    RippleDirective,
-    EmailFormComponentComponent,
-  ],
+    exports: [
+        CardComponent,
+        TopPageComponent,
+        TruncateStringPipe,
+        CreditCardPipePipe,
+        StarRatingComponent,
+        AccordionComponent,
+        CreditCardComponent,
+        LoaderComponent,
+        ModalComponent,
+        QuoteComponent,
+        ToggleComponent,
+        DebounceSearchComponent,
+        SearchListComponent,
+        FilterTermPipe,
+        CounterComponent,
+        RippleDirective,
+        EmailFormComponentComponent,
+        PaginationComponent,
+    ],
 })
 export class SharedModule { }

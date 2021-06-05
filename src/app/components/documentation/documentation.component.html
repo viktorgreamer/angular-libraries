@@ -9,6 +9,19 @@
 </app-card>
 <app-card
   [iconClass]="'fa fa-info-circle'"
+  title="Counter"
+  subTitle="Component"
+>
+  <div body>
+    <app-pagination
+      [totalItems]="25"
+      [pageSize]="10"
+    >
+    </app-pagination>
+  </div>
+</app-card>
+<app-card
+  [iconClass]="'fa fa-info-circle'"
   title="EmailForm"
   subTitle="Component"
 >

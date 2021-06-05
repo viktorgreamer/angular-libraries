@@ -1,0 +1,15 @@
+<ul>
+  <li>
+    <button [disabled]="currentPage <= 2" (click)="setPage(currentPage - 1)">
+      <i class="fa fa-chevron-left"></i>
+    </button>
+  </li>
+  <li *ngFor="let page of pages" (click)="setPage(page)">
+    <button [class.current-page]="page === currentPage"> {{ page }}</button>
+  </li>
+  <li>
+    <button [disabled]="currentPage >= totalPages" (click)="setPage(currentPage + 1)">
+      <i class="fa fa-chevron-right"></i>
+    </button>
+  </li>
+</ul>

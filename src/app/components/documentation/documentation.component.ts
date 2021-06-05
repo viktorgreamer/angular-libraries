@@ -23,8 +23,7 @@ export class DocumentationComponent implements OnInit {
     'USA', 'United Arab Emirates', 'Russia', 'French', 'Portugal'
   ];
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   initLoader(): void {
     this.showLoader = true;

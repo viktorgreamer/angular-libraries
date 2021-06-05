@@ -1,0 +1,31 @@
+.snackbar__container {
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  color: white;
+  visibility: hidden;
+
+  z-index: 400;
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  width: 300px;
+  height: 30px;
+  background-color: #4285f4;
+  text-align: center;
+  vertical-align: center;
+  opacity: 0;
+  &.show {
+    transition: all 0.5s;
+    position: fixed;
+    bottom: 100px ;
+    left: 50%;
+    opacity: 1;
+  }
+  &.danger {
+   background-color: #ff3547;
+  }
+  &.success {
+   background-color: mediumseagreen;
+  }
+}

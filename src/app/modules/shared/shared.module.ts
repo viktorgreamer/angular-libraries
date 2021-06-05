@@ -19,6 +19,7 @@ import { CounterComponent } from './counter/counter.component';
 import {RippleDirective} from '../directives/ripple.directive';
 import { EmailFormComponentComponent } from './email-form-component/email-form-component.component';
 import { PaginationComponent } from './pagination/pagination.component';
+import {SnackBarComponentComponent} from './snack-bar-component/snack-bar-component.component';
 
 @NgModule({
   declarations: [
@@ -40,31 +41,33 @@ import { PaginationComponent } from './pagination/pagination.component';
     RippleDirective,
     EmailFormComponentComponent,
     PaginationComponent,
+    SnackBarComponentComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
   ],
-    exports: [
-        CardComponent,
-        TopPageComponent,
-        TruncateStringPipe,
-        CreditCardPipePipe,
-        StarRatingComponent,
-        AccordionComponent,
-        CreditCardComponent,
-        LoaderComponent,
-        ModalComponent,
-        QuoteComponent,
-        ToggleComponent,
-        DebounceSearchComponent,
-        SearchListComponent,
-        FilterTermPipe,
-        CounterComponent,
-        RippleDirective,
-        EmailFormComponentComponent,
-        PaginationComponent,
-    ],
+  exports: [
+    CardComponent,
+    TopPageComponent,
+    TruncateStringPipe,
+    CreditCardPipePipe,
+    StarRatingComponent,
+    AccordionComponent,
+    CreditCardComponent,
+    LoaderComponent,
+    ModalComponent,
+    QuoteComponent,
+    ToggleComponent,
+    DebounceSearchComponent,
+    SearchListComponent,
+    FilterTermPipe,
+    CounterComponent,
+    RippleDirective,
+    EmailFormComponentComponent,
+    PaginationComponent,
+    SnackBarComponentComponent,
+  ],
 })
 export class SharedModule { }

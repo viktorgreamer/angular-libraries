@@ -1,0 +1,19 @@
+@import '../../../../styles';
+
+.tabs {
+  ul {
+    padding: 5px;
+    display: flex;
+
+    li {
+      display: inline;
+      list-style: none;
+      cursor: pointer;
+      margin: 3px;
+
+      &.selected {
+        border-bottom: solid 2px $blue;
+      }
+    }
+  }
+}

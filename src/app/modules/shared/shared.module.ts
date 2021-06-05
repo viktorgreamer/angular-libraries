@@ -22,6 +22,7 @@ import { PaginationComponent } from './pagination/pagination.component';
 import {SnackBarComponentComponent} from './snack-bar-component/snack-bar-component.component';
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountDownComponent } from './count-down/count-down.component';
+import {TabComponent} from './tab/tab.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CountDownComponent } from './count-down/count-down.component';
     SnackBarComponentComponent,
     SimplePopupComponent,
     CountDownComponent,
+    TabComponent,
   ],
   imports: [
     CommonModule,
@@ -74,6 +76,7 @@ import { CountDownComponent } from './count-down/count-down.component';
     SnackBarComponentComponent,
     SimplePopupComponent,
     CountDownComponent,
+    TabComponent,
   ],
 })
 export class SharedModule { }

@@ -19,11 +19,21 @@ export class DocumentationComponent implements OnInit {
   ];
   progressValue = 50;
   openModal = false;
+
+  tabs = [
+    {title: 'Tab 1', active: true},
+    {title: 'Tab 2', active: false},
+  ];
+
+  selectedTab = 0;
+
   public options = [
     'USA', 'United Arab Emirates', 'Russia', 'French', 'Portugal'
   ];
 
-  ngOnInit(): void {}
+
+  ngOnInit(): void {
+  }
 
   initLoader(): void {
     this.showLoader = true;

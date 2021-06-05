@@ -1,0 +1,13 @@
+<div class="tabs">
+  <ul>
+    <li *ngFor="let tab of tabs; index as i;"
+        [class.selected]="currentTabIndex===i"
+        (click)="setTag(i)"
+    >
+      {{ tab.title }}
+    </li>
+  </ul>
+</div>
+
+<ng-content></ng-content>
+

@@ -1,5 +1,19 @@
 <app-card
   [iconClass]="'fa fa-info-circle'"
+  title="TabComponent"
+  subTitle="Component"
+>
+  <div body>
+    <app-tab
+      (selectedTabIndex)="selectedTab = $event"
+    [tabs]="tabs">
+      <div *ngIf="selectedTab === 0">Content of tab 1</div>
+      <div *ngIf="selectedTab === 1">Content of tab 2</div>
+    </app-tab>
+  </div>
+</app-card>
+<app-card
+  [iconClass]="'fa fa-info-circle'"
   title="SimplePopup"
   subTitle="Component"
 >
@@ -11,6 +25,7 @@
   </app-simple-popup>
   </div>
 </app-card>
+
 <app-card
   [iconClass]="'fa fa-info-circle'"
   title="CountDown"

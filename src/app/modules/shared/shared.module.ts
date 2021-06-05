@@ -20,6 +20,8 @@ import {RippleDirective} from '../directives/ripple.directive';
 import { EmailFormComponentComponent } from './email-form-component/email-form-component.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import {SnackBarComponentComponent} from './snack-bar-component/snack-bar-component.component';
+import { SimplePopupComponent } from './simple-popup/simple-popup.component';
+import { CountDownComponent } from './count-down/count-down.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,7 @@ import {SnackBarComponentComponent} from './snack-bar-component/snack-bar-compon
     PaginationComponent,
     SnackBarComponentComponent,
     SimplePopupComponent,
+    CountDownComponent,
   ],
   imports: [
     CommonModule,
@@ -70,6 +73,7 @@ import {SnackBarComponentComponent} from './snack-bar-component/snack-bar-compon
     PaginationComponent,
     SnackBarComponentComponent,
     SimplePopupComponent,
+    CountDownComponent,
   ],
 })
 export class SharedModule { }

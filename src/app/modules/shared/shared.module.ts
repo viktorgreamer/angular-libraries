@@ -42,6 +42,7 @@ import {SnackBarComponentComponent} from './snack-bar-component/snack-bar-compon
     EmailFormComponentComponent,
     PaginationComponent,
     SnackBarComponentComponent,
+    SimplePopupComponent,
   ],
   imports: [
     CommonModule,
@@ -68,6 +69,7 @@ import {SnackBarComponentComponent} from './snack-bar-component/snack-bar-compon
     EmailFormComponentComponent,
     PaginationComponent,
     SnackBarComponentComponent,
+    SimplePopupComponent,
   ],
 })
 export class SharedModule { }

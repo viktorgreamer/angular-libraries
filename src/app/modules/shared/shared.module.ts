@@ -23,6 +23,7 @@ import {SnackBarComponentComponent} from './snack-bar-component/snack-bar-compon
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountDownComponent } from './count-down/count-down.component';
 import {TabComponent} from './tab/tab.component';
+import { BaseFormComponent } from './base-form/base-form.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import {TabComponent} from './tab/tab.component';
     SimplePopupComponent,
     CountDownComponent,
     TabComponent,
+    BaseFormComponent,
   ],
   imports: [
     CommonModule,

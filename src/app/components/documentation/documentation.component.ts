@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {AccordionItem} from '../accordion/AccordionItem';
 import {LoaderType} from '../../enum/loader-type.enum';
 import {fadeInOutAnimation} from '../../modules/shared/animations/fade-in-out/fade-in-out.animation';
+import {SnackBarService} from '../../modules/shared/snack-bar.service';
 
 @Component({
   selector: 'app-documentation',
@@ -10,6 +11,10 @@ import {fadeInOutAnimation} from '../../modules/shared/animations/fade-in-out/fa
   animations: [fadeInOutAnimation],
 })
 export class DocumentationComponent implements OnInit {
+
+  constructor(
+    public snackbar: SnackBarService
+  ) {}
 
   showLoader = false;
   loaderType = LoaderType.Circular;

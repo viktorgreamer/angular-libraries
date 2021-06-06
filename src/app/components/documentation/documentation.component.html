@@ -67,8 +67,8 @@
      #snackBar
      message="I am snackbar"
    ></app-snack-bar-component>
-    <button (click)="snackBar.color = 'success'; snackBar.show()">Show Snackbar</button>
-    <button (click)="snackBar.color = 'danger'; snackBar.show()">Show Danger Snackbar</button>
+    <button (click)="snackBar.color = 'success'; snackbar.callSnackBar('Snackbar')">Show Snackbar</button>
+    <button (click)="snackBar.color = 'danger'; snackbar.callSnackBar('Danger Snackbar')">Show Danger Snackbar</button>
   </div>
 </app-card>
 <app-card

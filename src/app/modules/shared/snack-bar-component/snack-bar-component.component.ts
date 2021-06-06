@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {SnackBarService} from '../snack-bar.service';
 
 @Component({
   selector: 'app-snack-bar-component',
@@ -9,9 +10,15 @@ export class SnackBarComponentComponent implements OnInit {
   @Input() public color = 'green';
   @Input() public message = '';
   public isShown = false;
-  constructor() { }
+  constructor(private snackbar: SnackBarService) { }
 
   ngOnInit(): void {
+    this.snackbar.snackbar$.subscribe(
+      (message) => {
+        this.message = message;
+        this.show();
+      }
+    );
   }
 
   public show(): void {

@@ -16,6 +16,7 @@
   vertical-align: center;
   opacity: 0;
   &.show {
+    visibility: unset;
     transition: all 0.5s;
     position: fixed;
     bottom: 100px ;

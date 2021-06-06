@@ -25,6 +25,7 @@ import { CountDownComponent } from './count-down/count-down.component';
 import {TabComponent} from './tab/tab.component';
 import { BaseFormComponent } from './base-form/base-form.component';
 import { CopyDirective } from './copy.directive';
+import { LazyLoadImageDirective } from './lazy-load-image.directive';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { CopyDirective } from './copy.directive';
     TabComponent,
     BaseFormComponent,
     CopyDirective,
+    LazyLoadImageDirective,
   ],
   imports: [
     CommonModule,
@@ -82,10 +84,12 @@ import { CopyDirective } from './copy.directive';
     CountDownComponent,
     TabComponent,
     CopyDirective,
+    LazyLoadImageDirective,
   ],
   providers: [
     { provide: 'Navigator', useValue: navigator },
     { provide: 'Document', useValue: document },
+    { provide: 'Window', useValue: window },
   ],
 })
 export class SharedModule { }

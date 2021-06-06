@@ -225,5 +225,13 @@
   <app-star-rating body [value]="4.5"></app-star-rating>
   <p footer>Footer Content</p>
 </app-card>
+<app-card
+  [iconClass]="'fa fa-info-circle'"
+  title="Lazy load image"
+  subTitle="Directive"
+>
+  <img appLazyLoadImage body src="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/earth20190130.jpg?itok=_DoC8y8q"
+       style="height: 500px; width: 700px" alt="Lazy Load Image">
+</app-card>
 
 <app-top-page></app-top-page>

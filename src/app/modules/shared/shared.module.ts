@@ -26,6 +26,7 @@ import {TabComponent} from './tab/tab.component';
 import { BaseFormComponent } from './base-form/base-form.component';
 import { CopyDirective } from './copy.directive';
 import { LazyLoadImageDirective } from './lazy-load-image.directive';
+import { AutoFocusDirective } from './auto-focus.directive';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { LazyLoadImageDirective } from './lazy-load-image.directive';
     BaseFormComponent,
     CopyDirective,
     LazyLoadImageDirective,
+    AutoFocusDirective,
   ],
   imports: [
     CommonModule,
@@ -85,6 +87,7 @@ import { LazyLoadImageDirective } from './lazy-load-image.directive';
     TabComponent,
     CopyDirective,
     LazyLoadImageDirective,
+    AutoFocusDirective,
   ],
   providers: [
     { provide: 'Navigator', useValue: navigator },

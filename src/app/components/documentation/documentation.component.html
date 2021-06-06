@@ -7,9 +7,12 @@
     <app-tab
       (selectedTabIndex)="selectedTab = $event"
       [tabs]="tabs">
-      <div *ngIf="selectedTab === 0" [@fadeInOutAnimation]>Content of tab 1</div>
+      <div *ngIf="selectedTab === 0" [@fadeInOutAnimation]>
+        Content of tab 1
+      </div>
       <div *ngIf="selectedTab === 1" [@fadeInOutAnimation]>Content of tab 2
         <div appCopy="'Copy me'">Copy me</div>
+        <input type="text" appAutoFocus>
       </div>
     </app-tab>
   </div>

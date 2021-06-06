@@ -6,9 +6,11 @@
   <div body>
     <app-tab
       (selectedTabIndex)="selectedTab = $event"
-    [tabs]="tabs">
+      [tabs]="tabs">
       <div *ngIf="selectedTab === 0" [@fadeInOutAnimation]>Content of tab 1</div>
-      <div *ngIf="selectedTab === 1" [@fadeInOutAnimation]>Content of tab 2</div>
+      <div *ngIf="selectedTab === 1" [@fadeInOutAnimation]>Content of tab 2
+        <div appCopy="'Copy me'">Copy me</div>
+      </div>
     </app-tab>
   </div>
 </app-card>
@@ -18,11 +20,11 @@
   subTitle="Component"
 >
   <div body>
-  <app-simple-popup
-  message="Message"
-  >
-    <h3> Here will be text </h3>
-  </app-simple-popup>
+    <app-simple-popup
+      message="Message"
+    >
+      <h3> Here will be text </h3>
+    </app-simple-popup>
   </div>
 </app-card>
 
@@ -32,7 +34,7 @@
   subTitle="Component"
 >
   <div body>
-  <app-count-down time="2020-10-23 23:00:00"></app-count-down>
+    <app-count-down time="2020-10-23 23:00:00"></app-count-down>
   </div>
 </app-card>
 <app-card
@@ -41,7 +43,7 @@
   subTitle="Component"
 >
   <div body>
-   <app-counter max="100" counter="45" min="20"></app-counter>
+    <app-counter max="100" counter="45" min="20"></app-counter>
   </div>
 </app-card>
 <app-card
@@ -63,10 +65,10 @@
   subTitle="Component"
 >
   <div body>
-   <app-snack-bar-component
-     #snackBar
-     message="I am snackbar"
-   ></app-snack-bar-component>
+    <app-snack-bar-component
+      #snackBar
+      message="I am snackbar"
+    ></app-snack-bar-component>
     <button (click)="snackBar.color = 'success'; snackbar.callSnackBar('Snackbar')">Show Snackbar</button>
     <button (click)="snackBar.color = 'danger'; snackbar.callSnackBar('Danger Snackbar')">Show Danger Snackbar</button>
   </div>
@@ -77,7 +79,7 @@
   subTitle="Component"
 >
   <div body>
-  <app-email-form-component></app-email-form-component>
+    <app-email-form-component></app-email-form-component>
   </div>
 </app-card>
 <app-card
@@ -87,7 +89,7 @@
 >
   <p body>
     <app-toggle
-    isOn="false"
+      isOn="false"
     ></app-toggle>
   </p>
 </app-card>
@@ -119,17 +121,17 @@
 >
   <div body>
     <app-quote
-    author="Henry David Thoreau"
-    quote="If you would convince a man that he does wrong, do right. But do not care to convince him. Men will believe what they see. Let them see."
-    type="primary"
+      author="Henry David Thoreau"
+      quote="If you would convince a man that he does wrong, do right. But do not care to convince him. Men will believe what they see. Let them see."
+      type="primary"
     >
 
     </app-quote>
     <hr>
     <app-quote
-    author="Henry David Thoreau"
-    quote="If you would convince a man that he does wrong, do right. But do not care to convince him. Men will believe what they see. Let them see."
-    type="danger"
+      author="Henry David Thoreau"
+      quote="If you would convince a man that he does wrong, do right. But do not care to convince him. Men will believe what they see. Let them see."
+      type="danger"
     >
 
     </app-quote>
@@ -141,7 +143,7 @@
   subTitle="Directive"
 >
   <p body>
-    <button appDebounceClick (debounceClick)="log()"> debounceClick </button>
+    <button appDebounceClick (debounceClick)="log()"> debounceClick</button>
   </p>
 </app-card>
 
@@ -150,24 +152,32 @@
   title="Modal"
   subTitle="Component"
 >
-  <app-modal body [open]= "openModal" (close)="openModal = false">
+  <app-modal body [open]="openModal" (close)="openModal = false">
     <div header>
       Modal Header
     </div>
     <div body>
       There are three phases of AOT compilation.
 
-      Phase 1 is code analysis. In this phase, the TypeScript compiler and AOT collector create a representation of the source. The collector does not attempt to interpret the metadata it collects. It represents the metadata as best it can and records errors when it detects a metadata syntax violation.
+      Phase 1 is code analysis. In this phase, the TypeScript compiler and AOT collector create a representation of the
+      source. The collector does not attempt to interpret the metadata it collects. It represents the metadata as best
+      it can and records errors when it detects a metadata syntax violation.
 
-      Phase 2 is code generation. In this phase, the compiler's StaticReflector interprets the metadata collected in phase 1, performs additional validation of the metadata, and throws an error if it detects a metadata restriction violation.
+      Phase 2 is code generation. In this phase, the compiler's StaticReflector interprets the metadata collected in
+      phase 1, performs additional validation of the metadata, and throws an error if it detects a metadata restriction
+      violation.
 
-      Phase 3 is template type checking. In this optional phase, the Angular template compiler uses the TypeScript compiler to validate the binding expressions in templates. You can enable this phase explicitly by setting the fullTemplateTypeCheck configuration option; see Angular compiler options.
+      Phase 3 is template type checking. In this optional phase, the Angular template compiler uses the TypeScript
+      compiler to validate the binding expressions in templates. You can enable this phase explicitly by setting the
+      fullTemplateTypeCheck configuration option; see Angular compiler options.
     </div>
     <div footer>
-      <button (click)="openModal = false"> Close </button>
+      <button (click)="openModal = false"> Close</button>
     </div>
   </app-modal>
-  <p footer><button (click)="openModal = !openModal">Open Modal</button></p>
+  <p footer>
+    <button (click)="openModal = !openModal">Open Modal</button>
+  </p>
 </app-card>
 <app-card
   [iconClass]="'fa fa-info-circle'"

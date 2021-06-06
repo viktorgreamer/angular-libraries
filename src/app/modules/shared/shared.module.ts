@@ -24,6 +24,7 @@ import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountDownComponent } from './count-down/count-down.component';
 import {TabComponent} from './tab/tab.component';
 import { BaseFormComponent } from './base-form/base-form.component';
+import { CopyDirective } from './copy.directive';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { BaseFormComponent } from './base-form/base-form.component';
     CountDownComponent,
     TabComponent,
     BaseFormComponent,
+    CopyDirective,
   ],
   imports: [
     CommonModule,
@@ -79,6 +81,11 @@ import { BaseFormComponent } from './base-form/base-form.component';
     SimplePopupComponent,
     CountDownComponent,
     TabComponent,
+    CopyDirective,
+  ],
+  providers: [
+    { provide: 'Navigator', useValue: navigator },
+    { provide: 'Document', useValue: document },
   ],
 })
 export class SharedModule { }
